@@ -1,14 +1,45 @@
+body {
+    background: url(https://media.istockphoto.com/id/1523130039/pt/foto/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.jpg?s=612x612&w=0&k=20&c=p-ThP5-uQ9KWh3HZTZ0olsv7hi5DLyOBK3ghdEMzn48=);
+}
+
+#Logo {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
     height: 100%;
+    padding: 20px 8%;
+    background: url(https://thumbs.dreamstime.com/b/preto-e-escuro-abstratos-fundo-verde-da-textura-projeto-do-grunge-com-pintura-antiga-elegante-na-ilustra%C3%A7%C3%A3o-parede-ou-papel-de-141957864.jpg);
+}
+
+.nav_item {
+    color: white;
+    font-size: 20px;
+    font: bold;
+    padding: 5px 5px 5px;
+}
+
+.nav_item:hover {
+    background-color: green;
+    text-decoration: underline;
+    border-radius: 8px;
 }
 
 .navbar {
     font: 50px Arial;
-    color: green;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .nav_lista {
@@ -16,14 +47,4 @@ header {
     list-style: none;
     gap: 80px;
     text-transform: uppercase;
-}
-
-p {
-    font-size: 20px;
-    color: green;
-}
-
-ul {
-    color: black;
-    font-size: 20px;
 }
