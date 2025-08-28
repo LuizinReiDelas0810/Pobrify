@@ -1,70 +1,77 @@
-body {
-    background: url(https://media.istockphoto.com/id/1523130039/pt/foto/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.jpg?s=612x612&w=0&k=20&c=p-ThP5-uQ9KWh3HZTZ0olsv7hi5DLyOBK3ghdEMzn48=);
-}
+    body {
+        background: url(https://media.istockphoto.com/id/1523130039/pt/foto/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.jpg?s=612x612&w=0&k=20&c=p-ThP5-uQ9KWh3HZTZ0olsv7hi5DLyOBK3ghdEMzn48=);
+    }
 
-#Logo {
-    font-size: 50px;
-    font-weight: 600;
-    color: white;
-}
+    #Logo {
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-header {
-    width: 100%;
-    height: 100%;
-    padding: 20px 8%;
-    background: url(https://thumbs.dreamstime.com/b/preto-e-escuro-abstratos-fundo-verde-da-textura-projeto-do-grunge-com-pintura-antiga-elegante-na-ilustra%C3%A7%C3%A3o-parede-ou-papel-de-141957864.jpg);
-}
+    header {
+        width: 100%;
+        height: 100%;
+        padding: 20px 8%;
+        background: url(https://thumbs.dreamstime.com/b/preto-e-escuro-abstratos-fundo-verde-da-textura-projeto-do-grunge-com-pintura-antiga-elegante-na-ilustra%C3%A7%C3%A3o-parede-ou-papel-de-141957864.jpg);
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1000;
 
-.nav_item {
-    color: white;
-    font-size: 20px;
-    font: bold;
-    padding: 5px 5px 5px;
-}
+    }
 
-.nav_item:hover {
-    background-color: green;
-    text-decoration: underline;
-    border-radius: 8px;
-}
+    .nav_item {
+        color: white;
+        font-size: 20px;
+        font: bold;
+        padding: 5px 5px 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 
-.navbar {
-    font: 50px Arial;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .nav_item:hover {
+        background-color: green;
+        text-decoration: underline;
+        border-radius: 8px;
+    }
 
-}
+    .navbar {
+        font: 50px Arial;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.nav_lista {
-    display: flex;
-    list-style: none;
-    gap: 80px;
-    text-transform: uppercase;
-}
+    }
 
-.home {
-    display: flex;
-    min-height: calc(100vh-91px);
-}
+    .nav_lista {
+        display: flex;
+        list-style: none;
+        gap: 80px;
+        text-transform: uppercase;
+    }
 
-section {
-    width: 100%;
-    padding: 20px 8%;
-    display: flex;   
-}
+    .home {
+        display: flex;
+        min-height: calc(100vh-91px);
+    }
 
-.titulo {
-    font-size: 30px;
-    color: white;
-}
+    section {
+        width: 100%;
+        padding: 20px 8%;
+        display: flex;
+    }
 
-.titulocor {
-    color: aqua;
-}
+    .titulo {
+        font-size: 30px;
+        color: white;
+    }
+
+    .titulocor {
+        color: aqua;
+    }

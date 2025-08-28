@@ -1,37 +1,63 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/png" href="favicon.png">
-        <title>PobriFy</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>PobriFy</title>
+</head>
 
-    <body>
-        <header class="cabecalho">
-            <nav class="navbar">
-                <i id="Logo" class="fa-solid fa-music"> PobriFy</i> <!--Logo-->
-                <ul class="nav_lista">
-                    <li class="nav_item">Rock</li>
-                    <li class="nav_item">Gospel</li>
-                    <li class="nav_item">Samba</li>
+<body>
+    <header class="cabecalho">
+        <nav class="navbar">
+            <i id="Logo" class="fa-solid fa-music"> PobriFy</i> <!---->
 
-                </ul>
-            </nav>
-            <p style="font: 20px Arial; color: white;"><strong>Músicas com qualidade duvidosa é aqui!</strong></p>
-        </header>
-        <hr>
+            <button class="menu-toggle" id="menuToggle">
+                <span>123</span>
+                <span>123</span>
+                <span>123</span>
+            </button>
 
-        <main class="conteudo">
-            <section class="home">
-                <h1 class="titulo">Músicas Mais <span class="titulocor">Acessadas</span> desta semana❤️</h1>
-            </section>
-       </main>
-    </body>
+            <ul class="nav_lista">
+                <li class="nav_item">Rock</li>
+                <li class="nav_item">Gospel</li>
+                <li class="nav_item">Samba</li>
+            </ul>
+        </nav>
+        <p style="font: 20px Arial; color: white;"><strong>Músicas com qualidade duvidosa é aqui!</strong></p>
+    </header>
+    <hr>
 
-    </html>
+    <main class="conteudo">
+        <section class="home">
+            <h1 class="titulo">Músicas Mais <span class="titulocor">Acessadas</span> desta semana❤️</h1>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript para controlar o menu hambúrguer
+        const menuToggle = document.getElementById('menuToggle');
+        const navLista = document.getElementById('navLista');
+
+        menuToggle.addEventListener('click', function () {
+            navLista.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um item
+        const navItems = document.querySelectorAll('.nav_item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function () {
+                navLista.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
